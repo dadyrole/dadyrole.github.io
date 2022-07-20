@@ -6,16 +6,10 @@ body {
     backdrop-filter:  blur(5px);
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
 .title_main {
     font-size: 270%;
     text-align: center;
+    color: rgb(33,37,41);
 }
 
 .desks {
@@ -30,21 +24,27 @@ main {
     justify-content: flex-start;
     margin: 1%;
     border-radius: 3%;
-    background-color: a3a3a3;
+    background-color: rgb(163, 163, 163);
     opacity: 70%;
     transition: all 0.2s ease-in-out 0.5s;
     text-decoration: none;
     color: black;
 }
 
+.hr_ {
+    border: 1px solid black;
+    transition: border 0.1s ease 0.5s;
+    opacity: 100%;
+}
+
 .desk:hover {
     transform: scale(1.035);
-    background-color: 828282;
+    background-color: rgb(130, 130, 130);
     color: black;
 }
 
-.hr_ {
-    border: 1px solid black;
+.desks>.desk:hover>.hr_ {
+    border: 2px solid rgb(7, 119, 184, 1);
 }
 
 .title_desk {
@@ -71,4 +71,14 @@ main {
 
 .icons {
 
+}
+
+.nodec {
+    text-decoration: none;
+    cursor: default;
+    color: rgb(33,37,41);
+}
+
+.nodec:hover {
+    color: rgb(33,37,41);
 }
