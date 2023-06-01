@@ -14,12 +14,13 @@ body {
 
 .desks {
     display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	/*grid-template-columns: 1fr 1fr 1fr;*\
     margin: 1%;
 }
 
 .desk {
     display: flex;
+    flex-basis: 32%;
     flex-flow: column wrap;
     justify-content: flex-start;
     margin: 1%;
