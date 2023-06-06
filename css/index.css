@@ -32,8 +32,10 @@ body {
     height: inherit;
 }
 
-@media (max-aspect-ratio: 21/20) {
-    flex-direction: column;
+@media (max-aspect-ratio: 1/1) {
+    .desks{
+        flex-direction: column;
+    }
 }
 
 .hr_ {
