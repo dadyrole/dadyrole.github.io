@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('background.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+p{
+    margin:0;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    user-select: none;
+}
+
+.blinking-caret{
+    width: 4px;
+    background-color: lawngreen;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
