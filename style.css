@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom right, #a46de9, #6e0fbc),
+                linear-gradient(to bottom left, #a46de9, #6e0fbc);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: monospace;
+    font-size: 2.5em;
+}
+.head{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#close-button{
+    font-size: 2.0em;
+    cursor: pointer;
+}
+#map-selected{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+#content{
+    margin-top: 1vh;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: fit-content;
+}
+#svg-content{
+    max-height: 60vh;
+}
+#text-content{
+    text-indent: 2.0em;
+    padding: 0.5em;
+    width: 70%;
+    line-height: 1.5;
+}
+
+#map {
+    width: 70%;
+    min-width: 520px;
+    max-width: 980px;
+    padding: 20px;
+}
+#map-svg {
+    min-height: fit-content;
+    max-height: 50vh;
+    height: 100%;
+    filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.5));    
+}
+#map path {
+    stroke: #FFFFFF;
+    stroke-width: 1;
+    stroke-linejoin: round; 
+}
+#map [data-code] {
+    fill: #337AB7;
+    transition: all 0.5s ease;
+}
+#map [data-code]:hover{
+    fill: #0180ef;
+    transition: all 0.2s;
+}
+.width-100{
+    width: 100%;
+}
+.height-100{
+    height: 100%;
+}
+.display-none{
+    display: none!important;
+}
